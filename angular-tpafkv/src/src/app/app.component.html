@@ -1,0 +1,19 @@
+<hello name="{{ name }}"></hello>
+
+
+<div class="wrapper">
+  <app-box></app-box>
+  <app-circle></app-circle>
+  <app-box></app-box>
+  <app-circle></app-circle>
+  <app-box></app-box>
+  <app-circle></app-circle>
+  <app-box></app-box>
+  <app-circle></app-circle>
+</div>
+<div class = buttons>
+<input placeholder="Box color" [(ngModel)]="boxColor" (ngModelChange)="changeBoxColor()">
+
+<input placeholder="Circle color" [(ngModel)]="circleColor" (ngModelChange)="changeCircleColor()">
+
+</div>
