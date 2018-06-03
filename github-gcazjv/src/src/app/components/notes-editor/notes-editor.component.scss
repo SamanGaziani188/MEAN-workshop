@@ -1,0 +1,21 @@
+.notes-editor {
+  padding: 20px;
+  font-size: .9em;
+}
+
+.textarea
+{
+    font-size: inherit;
+    width: 100%;
+    border: none;
+    height: 100%;
+    resize: none;
+    outline: none;
+}
+
+.notes__date {
+  color: #999;
+  margin-top: 20px;
+  font-size: .9em;
+  text-align: right;
+}

@@ -1,0 +1,11 @@
+.notes-component {
+    display: flex;
+}
+
+app-notes-list {
+    width: 200px;
+}
+
+app-notes-editor {
+  flex: 1;
+}
