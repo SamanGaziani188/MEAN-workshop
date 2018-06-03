@@ -12,4 +12,5 @@ export class NotesEditorComponent implements OnInit {
   ngOnInit() {
   }
 
+  myDate = Date();
 }
