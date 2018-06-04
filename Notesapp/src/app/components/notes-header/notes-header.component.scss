@@ -1,7 +1,20 @@
-h1
+.notes-header {
+    font-size: 20px;
+    background: #0187dc;
+    text-shadow: 0 2px 0px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    color: #fff;
+}
+.button-trash
 {
-    font-size : 25px;
-    background-color: darkcyan ;
-    padding: 10px; 
-
+    margin-left: 80%;
+    background-color: white;    
+}
+.button-add
+{
+    background-color: white;
+}
+.button-edit
+{
+    background-color: white;
 }
