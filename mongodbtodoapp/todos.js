@@ -5,7 +5,7 @@ var todoSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    
+
     description:{
         type: String,
         required : true
@@ -41,6 +41,7 @@ module.exports.addTodo = function(todo,callback){
 module.exports.updateTodo = function(id, todo, options, callback){
     var query = {_id: id};
     var update = {
+        name : todo.name,
         description : todo.description,
         completed : todo.completed,
         username : todo.username

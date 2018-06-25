@@ -38,7 +38,7 @@ app.get('/users/:_id', function(req,res){
 });
 
 app.post('/users', function(req,res){
-    var user = req.body;
+    var user = req.body.user;
     User.addUser(user, function(err,user){
         if (err){
             throw err;
@@ -87,7 +87,7 @@ app.get('/todo/:_id', function(req,res){
 });
 
 app.post('/todo', function(req,res){
-    var todo = req.body;
+    var todo = req.body.todo;
     Todo.addTodo(todo, function(err,todo){
         if (err){
             throw err;
@@ -98,7 +98,7 @@ app.post('/todo', function(req,res){
 
 app.put('/todo/:_id', function(req,res){
     var id = req.params._id;
-    var todo = req.body;
+    var todo = req.body.todo;
     Todo.updateTodo(id, todo, {}, function(err,todo){
         if (err){
             throw err;
@@ -116,7 +116,6 @@ app.delete('/todo/:_id', function(req,res){
         res.json(todo);
     });
 });
-
 
 app.listen(3000);
 console.log('Running on port 3000')
