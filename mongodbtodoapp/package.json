@@ -12,5 +12,8 @@
     "mongoose": "*"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ws": "3.3.2"
+  }
 }
